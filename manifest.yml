@@ -1,0 +1,11 @@
+---
+applications:
+- name: my-tinyqueries-sample-app
+  memory: 128M 
+  instances: 1
+  host: my-tinyqueries-sample-app
+  path: .
+  buildpack: https://github.com/cloudfoundry/php-buildpack.git
+  services:
+  - my-test-sql-db
+  - my-test-tinyqueries-project
